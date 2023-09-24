@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(185, 165, 139);
+    
+}
+
+
+.head {
+    max-width: 475px;
+    border: 5px solid #090909;
+    margin: auto;
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top:20px ;
+    margin-bottom: 20px;
+    font-family: "Orbitron", sans-serif;
+    color: rgb(247, 248, 252);
+}
+
+#restartButton {
+    background-color: rgb(18, 232, 68);
+    border: solid 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    padding: 18px 7px;
+    background-image: url(sharingan.png);
+    background-position: center;
+    background-size: cover;
+    color: rgb(254, 248, 248);
+    font-weight: bold;
+    border-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 46%;
+
+}
+
+#restartButton:active {
+    background-image:url(mata\ sasuke.jpg);
+    transition-duration: 100000;
+}
+
+.score {
+    margin-top: 5px;
+}
+
+.container {
+    max-width: 650px;
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    gap: 2rem;
+    margin: auto;
+    padding: 10px;
+}
+
+.cell div {
+    height: 100px;
+    border-radius: 12px;
+}
+
+.cell {
+    position: relative;
+    cursor: pointer;
+}
+
+.front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #121212;
+    background-color: #fffcfc;
+    transform: rotateY(90deg);
+   
+}
+
+.back {
+   background-image: url(awan\ akatsuki.jpg);
+   background-position: center;
+   background-size: cover;
+}
+
+img {
+    height: 88px;
+    width: 77px;
+}
+
+.flip {
+    transform: rotateY(0deg);
+}
+
+.match {
+    transform: rotateY(0deg);
+}
+
+#tombol {
+    position: absolute;
+    top: 19%;
+    display: flex;
+
+}
